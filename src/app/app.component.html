@@ -1,0 +1,71 @@
+<div class="Conteiner" > 
+
+  <h1>Data TpAng_01</h1>
+  <h2>Hola soy un animal{{ categoria}}</h2>
+  
+  <br>
+  <h3>soy un animal:{{ tipo }}</h3>
+
+   <br>
+   
+    
+   <h2>Soy Carnivoro</h2>  <!--propiedades de los componentes de html-->
+  
+    <!--
+    <input type="text" class= "from-control" placeholder="Tipee aquì"> 
+     -->
+   
+  <!-- placeholder es unado se ingresa un dato y deparece -->
+     
+    <input type="text" class= "from-control" 
+    [placeholder]= 'textoPlaceHolder' 
+    [disabled] ='disabledInput' > 
+
+    <br>
+    <img [src]="img1"
+    alt="img" 
+    width="350" 
+    height="250"> 
+    
+    <br>
+    <!-- cuando esta entre [] es un componente como por ej placeholder-->
+    <img [src]="img2"   
+
+     alt="img" 
+     width="350" 
+     height="250"> 
+    <!-- el alt son programas que analisas programas y dan categorias-->
+
+      <br>
+      
+      <h2>MeGustalaCarne</h2>
+      <!-- es la froma de comunicarce angular entre vista y controlador -->
+      <h3>{{MeGustalaCarne}}</h3>
+      <img [src]="img3"
+      alt="img" 
+      width="350" 
+      height="250"> 
+      >
+      <br>
+      
+      <button class="btn btn-primary" (click)="cambiarAnimal()">Click Me</button>
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
